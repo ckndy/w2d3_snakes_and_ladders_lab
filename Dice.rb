@@ -1,7 +1,11 @@
 class Dice
 
-  def roll
-    return Array(1..6).sample()
+  def initialize
+    @rolls = (1..4).to_a
   end
 
+  def roll
+    return @rolls.sample
+  end
+  
 end
