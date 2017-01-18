@@ -1,11 +1,17 @@
 class Board
 
-  attr_reader :name, :number_of_squares
+  attr_accessor :players 
 
-  def initialize(name, squares)
-
-    @name = name
-    @number_of_squares = squares
+  def initialize(players)
+    @players = players
+    @cell = cell
   end
 
+  def number_of_players
+    @players.size
+  end
+
+  def number_of_cells
+    cell = (1..100)
+  end
 end
